@@ -32,9 +32,9 @@ function RentalsMap({locations, google, setHighLight }) { /*, setHighLight*/
         zoom = {13}
         disableDefaultUI = {true}
       >
-        {/* {Location.map((cords, i) => (
-          <Marker position = {cords} onClick = {() => setHighLight(i)} />
-        ))} */}
+         { locations.map((coords, i) => (
+          <Marker position = {coords} onClick = {() => setHighLight(i)} />
+        ))} 
       </Map>
       )}
     </>
