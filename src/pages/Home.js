@@ -6,7 +6,6 @@ import logo from "../images/HomeLogo.png";
 import { ConnectButton, Icon, Select, DatePicker, Input, Button} from "web3uikit";
 import { useState } from "react";
 
-
 const Home = () => {
   const [checkIn, setCheckIn] = useState(new Date());
   const [checkOut, setCheckOut] = useState(new Date());
@@ -24,8 +23,8 @@ const Home = () => {
         </div>
         <div className="tabs">
           <div className="selected">Places to stay</div>
-          <div>Experiences</div>
-          <div>Online Experiences</div>
+          <div className="exp"><a href= "https://www.airbnb.co.in/s/experiences?c=.pi0.pk9835339438_113255333253&locale=en&_set_bev_on_new_domain=1664442393_NjVlNmQ1YTA0NGM3" target="_blank" rel="noreferrer">Experiences</a></div>
+          <div className="con"><a href= "https://www.airbnb.co.in/s/experiences?c=.pi0.pk9835339438_113255333253&locale=en&_set_bev_on_new_domain=1664442393_NjVlNmQ1YTA0NGM3" target="_blank" rel="noreferrer">Contact Us</a></div>
         </div>
         <div className="lrcontainers">
           <ConnectButton/>
@@ -106,9 +105,9 @@ const Home = () => {
         <div className="text">
           Let us decide and discover new places to stay, live, work or just relax.
         </div>
-        <Button
+        <Button 
             text = "Explore a location"
-            onClick={() => console.log(checkOut)}
+            onClick={() => console.log(checkOut)} 
         />
       </div>
     </>
